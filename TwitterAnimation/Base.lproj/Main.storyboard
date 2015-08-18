@@ -1,22 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TwitterAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2SG-Ao-Y9Z">
+                                <rect key="frame" x="0.0" y="146" width="320" height="422"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9gK-VQ-fpF">
+                                        <rect key="frame" x="8" y="-63" width="184" height="109"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72g-wj-X3d">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="147"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="72g-wj-X3d" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2Hl-p5-8Nu"/>
+                            <constraint firstItem="72g-wj-X3d" firstAttribute="trailing" secondItem="2SG-Ao-Y9Z" secondAttribute="trailing" id="7nr-Hl-P82"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="72g-wj-X3d" secondAttribute="bottom" constant="421" id="90Y-i3-3yZ"/>
+                            <constraint firstItem="2SG-Ao-Y9Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="126" id="FrH-RK-luP"/>
+                            <constraint firstItem="2SG-Ao-Y9Z" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="Hzt-H7-1pN"/>
+                            <constraint firstItem="72g-wj-X3d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KxT-c3-H4N"/>
+                            <constraint firstItem="2SG-Ao-Y9Z" firstAttribute="leading" secondItem="72g-wj-X3d" secondAttribute="leading" id="S6o-HQ-OBe"/>
+                            <constraint firstAttribute="trailing" secondItem="72g-wj-X3d" secondAttribute="trailing" id="eyE-cF-8GA"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="header" destination="72g-wj-X3d" id="olI-9C-elh"/>
+                        <outlet property="scrollView" destination="2SG-Ao-Y9Z" id="B4v-qC-rzV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

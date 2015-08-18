@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		4BB1201B1B1C2FB4001AF946 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1201A1B1C2FB4001AF946 /* AppDelegate.swift */; };
 		4BB1201D1B1C2FB4001AF946 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB1201C1B1C2FB4001AF946 /* ViewController.swift */; };
-		4BB120201B1C2FB4001AF946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BB1201E1B1C2FB4001AF946 /* Main.storyboard */; };
 		4BB120221B1C2FB4001AF946 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BB120211B1C2FB4001AF946 /* Images.xcassets */; };
 		4BB120251B1C2FB4001AF946 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BB120231B1C2FB4001AF946 /* LaunchScreen.xib */; };
 		4BB120311B1C2FB4001AF946 /* TwitterAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB120301B1C2FB4001AF946 /* TwitterAnimationTests.swift */; };
+		4BB1203B1B1C3355001AF946 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BB1203A1B1C3355001AF946 /* Main.storyboard */; };
+		4BB1203D1B1C346F001AF946 /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB1203C1B1C346F001AF946 /* avatar.png */; };
+		4BB1207B1B1C63E0001AF946 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 4BB1207A1B1C63E0001AF946 /* image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +32,14 @@
 		4BB120191B1C2FB4001AF946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BB1201A1B1C2FB4001AF946 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BB1201C1B1C2FB4001AF946 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4BB1201F1B1C2FB4001AF946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4BB120211B1C2FB4001AF946 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4BB120241B1C2FB4001AF946 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4BB1202A1B1C2FB4001AF946 /* TwitterAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB1202F1B1C2FB4001AF946 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4BB120301B1C2FB4001AF946 /* TwitterAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAnimationTests.swift; sourceTree = "<group>"; };
+		4BB1203A1B1C3355001AF946 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4BB1203C1B1C346F001AF946 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		4BB1207A1B1C63E0001AF946 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +81,11 @@
 		4BB120171B1C2FB3001AF946 /* TwitterAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				4BB1207A1B1C63E0001AF946 /* image.png */,
+				4BB1203C1B1C346F001AF946 /* avatar.png */,
+				4BB1203A1B1C3355001AF946 /* Main.storyboard */,
 				4BB1201A1B1C2FB4001AF946 /* AppDelegate.swift */,
 				4BB1201C1B1C2FB4001AF946 /* ViewController.swift */,
-				4BB1201E1B1C2FB4001AF946 /* Main.storyboard */,
 				4BB120211B1C2FB4001AF946 /* Images.xcassets */,
 				4BB120231B1C2FB4001AF946 /* LaunchScreen.xib */,
 				4BB120181B1C2FB3001AF946 /* Supporting Files */,
@@ -192,9 +198,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BB120201B1C2FB4001AF946 /* Main.storyboard in Resources */,
+				4BB1203D1B1C346F001AF946 /* avatar.png in Resources */,
 				4BB120251B1C2FB4001AF946 /* LaunchScreen.xib in Resources */,
 				4BB120221B1C2FB4001AF946 /* Images.xcassets in Resources */,
+				4BB1203B1B1C3355001AF946 /* Main.storyboard in Resources */,
+				4BB1207B1B1C63E0001AF946 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4BB1201E1B1C2FB4001AF946 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4BB1201F1B1C2FB4001AF946 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4BB120231B1C2FB4001AF946 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
